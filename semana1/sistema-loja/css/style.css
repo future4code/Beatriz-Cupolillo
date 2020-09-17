@@ -1,0 +1,47 @@
+html, body{
+    height: 100%;
+}
+body{
+    background-color:#e0f9ff
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #005063;
+}
+    
+.menu li{
+    display: inline;
+    padding: 30px;
+    color: #ffffff;
+}
+
+.menu li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #036e87
+}
+
+.rodape{
+    text-align: center;
+    padding: 80px;
+}
+.redes-sociais-link img{
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 4px;
+    width: 80px;
+}
