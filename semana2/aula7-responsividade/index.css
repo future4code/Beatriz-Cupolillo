@@ -3,15 +3,7 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-}
-
-.main-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: auto;
-    height: 50%;
-    margin: 1em;
-    gap: 1em;
+    text-align: center;
 }
 
 #first-block {
@@ -19,6 +11,15 @@ body {
     height: 20vh;
     width:100%;
     border: 0;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    height: 30vh;
+    margin: 1em;
+    gap: 1em;
 }
 
 .second-container{
@@ -32,8 +33,8 @@ body {
 
 .third-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 20vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 30vh;
     gap: 1em;
     width: auto;
     margin: 1em;
@@ -65,17 +66,28 @@ body {
     border: 1px solid black;
 }
 
+   /*Tablets*/
+@media screen and (min-width: 420px) and (max-width: 768px){
 
-@media screen and (max-width: 768px){
-    /*Tablets*/
-.main-container{
+    .main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    #green-block{
+    grid-column: 1/ 3;
+    }
+    .third-container{
+    grid-template-columns: 1fr 1fr;
+    }
+    #white-block{
+    grid-column: 1/ 3;
+    }
+}
+    /*Celular*/
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .main-container, .second-container, .third-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-#green-block{
-        grid-column: 1/ 3;
-    }
-#white-block{
-        grid-column: 1/ 3;
-}
-}
+        grid-template-columns: 1fr;
+        height: 30vh;
+        }
