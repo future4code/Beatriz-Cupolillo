@@ -25,7 +25,7 @@ body {
 .second-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 20vh;
+    height: 30vh;
     gap: 1em;
     width: auto;
     margin: 1em;
@@ -33,7 +33,7 @@ body {
 
 .third-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 20vh;
     gap: 1em;
     width: auto;
