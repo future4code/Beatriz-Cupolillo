@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
     <title>Labetube</title>
 </head>
+
 <body>
-    <main>
         <header>
+            <p>Labetube</p>
+            <div class="pesquisar">
+                <input type="text" id="txtpesquisar" placeholder="Pesquisar..." />
+                <button id="bt-pesquisar">Pesquisar</button>
+            </div>
             <nav class="menu-flex">
-                <p>Labetube</p>
-                <div class="pesquisar">
-                    <input type="text" id="txtpesquisar" placeholder="Pesquisar..."/>
-                    <button id="bt-pesquisar">Pesquisar</button>
-                </div>
                 <ul>
-                    <li>Sign in</li>
-                    <li>Home</li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="./index.html">Home</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="grade-videos">
+        <section class="container-videos">
             <figure>
-                <a href="https://storage.googleapis.com/future-apis.appspot.com/1.mp4">
+                <a href="./video1.html">
                     <img src="./img/video1.PNG" alt="Video 1">
                     <figcaption>Video 1</figcaption>
                 </a>
             </figure>
             <figure>
-                <a href="#">
+                <a href="./video2.html">
                     <img src="./img/video2.PNG" alt="Video 2">
                     <figcaption>Video 2</figcaption>
                 </a>
@@ -47,7 +49,7 @@
             </figure>
             <figure>
                 <a href="#">
-                    <img src="./img/video5PNG" alt="Video 5">
+                    <img src="./img/video5.PNG" alt="Video 5">
                     <figcaption>Video 5</figcaption>
                 </a>
             </figure>
@@ -70,11 +72,10 @@
                 </a>
             </figure>
         </section>
-        
-    </main>
-
     <footer>
+        <p>Bya. 2020 - Todos os direitos reservados.</p>
     </footer>
 
 </body>
+
 </html>
