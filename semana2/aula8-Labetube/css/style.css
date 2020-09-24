@@ -118,4 +118,7 @@ video{
     .video{
         text-align: left;
     }
+    .pesquisar{
+        display:none;
+    }
 }
