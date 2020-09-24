@@ -96,11 +96,12 @@ footer {
 .video {
     margin-top: 30px;
     margin-left: 10px;
+    text-align: center;
 }
 
 video{
-    max-width: 500px;
-    max-height: 350px;
+    max-width: 600px;
+    max-height: 450px;
 }
 
 @media screen and (max-width: 600px) {
@@ -112,8 +113,8 @@ video{
         justify-content: flex-start;
     }
     video{
-        max-width: 200px;
-        max-height: 150px;
+        max-width: 300px;
+        max-height: 200px;
     }
     .video{
         text-align: left;
