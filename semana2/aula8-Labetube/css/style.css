@@ -103,5 +103,10 @@ video {
 
 @media screen and (max-width: 600px) {
     .container-videos {
-        grid-template-columns: 0.5fr;
+        grid-template-columns: 1fr;
     }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
