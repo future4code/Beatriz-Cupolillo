@@ -1,6 +1,6 @@
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -13,12 +13,13 @@ body {
     border: 0;
 }
 
-.main-container{
+.first-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 30vh;
     margin: 1em;
     gap: 1em;
+    text-align: center;
 }
 
 .second-container{
@@ -66,7 +67,7 @@ body {
    /*Tablets*/
 @media screen and (min-width: 540px) and (max-width: 1024px){
 
-    .main-container{
+    .first-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     }
@@ -82,7 +83,12 @@ body {
 }
     /*Celular*/
  @media screen and (max-width: 539px){
-    .main-container, .third-container, .second-container{
-     display: grid;
+    .first-container{
      grid-template-columns: 1fr;
-     grid-template-rows: 1fr;
+    }
+    .second-container{
+     grid-template-columns: 1fr;
+    }
+    .third-container{
+     grid-template-columns: 1fr; 
+    }
