@@ -33,13 +33,19 @@ nav ul{
 nav li{
     list-style: none;
     padding: 10px;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: large;
+    font-weight: 500;
+    margin: auto;
 }
 
 nav a{
     color: white;
     text-decoration: none;
+}
+
+nav a:hover{
+    color: #68d1cb;
 }
 
 .pesquisar{
@@ -55,6 +61,14 @@ nav a{
     color: white;
 }
 
+h1 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+
 footer {
     background-color: #132235;
     margin: 0;
@@ -62,7 +76,7 @@ footer {
     width: 100%;
     border: 0;
     color: white;
-    position: fixed;
+    display:flex;
     bottom: 0;
     text-align: center;
     font-size: 10px;
