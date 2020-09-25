@@ -7,7 +7,10 @@ body {
     padding: 0;
     background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
+
+/**Ajustes no menu da página**/
 
 header {
     background-color: #132235;
@@ -20,17 +23,17 @@ header {
     justify-content: space-between;
 }
 
-header nav{
+header nav {
     display: flex;
     margin: auto;
 }
 
-nav ul{
+nav ul {
     display: flex;
     padding: 20px;
 }
 
-nav li{
+nav li {
     list-style: none;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -39,16 +42,16 @@ nav li{
     margin: auto;
 }
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #68d1cb;
 }
 
-.pesquisar{
+.pesquisar {
     margin: auto;
 }
 
@@ -61,7 +64,13 @@ nav a:hover{
     color: white;
 }
 
-main{
+#pesquisar-mobile {
+    display: none;
+}
+
+/**Ajustes no conteúdo da página**/
+
+main {
     display: flex;
     flex-direction: column;
 }
@@ -77,19 +86,21 @@ main p {
     font-family: 'Montserrat', sans-serif;
 }
 
-form{
+/**Ajustes no formulário da aba contato **/
+
+form {
     margin: 0 auto;
     text-align: center;
 }
 
-.contato-email input{
+.contato-email input {
     max-width: 500px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-.contato-email textarea{
+.contato-email textarea {
     max-width: 500px;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -98,30 +109,30 @@ form{
     text-align: center;
 }
 
-#botaoEnviar{
-margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #132235;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: .09em;
-  border-radius: 2px;
-  margin-bottom: 20px;
+#botaoEnviar {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #132235;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .09em;
+    border-radius: 2px;
+    margin-bottom: 20px;
 }
 
-}
-  
-form input{
-    max-width:400px;
+form input {
+    max-width: 400px;
     padding: 1em;
 }
-  
-form textarea{
-    max-width:400px;
-    padding:1em;
+
+form textarea {
+    max-width: 400px;
+    padding: 1em;
 }
+
+/**Ajustes no footer da página**/
 
 footer {
     background-color: #132235;
@@ -130,7 +141,7 @@ footer {
     width: 100%;
     border: 0;
     color: white;
-    display:flex;
+    display: flex;
     bottom: 0;
     text-align: center;
     font-size: 8px;
@@ -142,27 +153,44 @@ footer {
     display: flex;
 }
 
-#p-footer{
+#p-footer {
     margin: auto;
 }
+/**Ajustes nas redes sociais no footer da página**/
 
-.sns-footer {
-}
 
 .sns-footer a {
     color: #ffffff;
     margin-left: 5px;
 }
 
-@media screen and (max-width: 699px) {
+/**Ajustes na responsividade para celulares e/ou tablets**/
+
+@media screen and (max-width: 799px) {
     header {
         display: flex;
         justify-content: flex-start;
     }
-    .menu-flex{
-        display:none;
+
+    .menu-flex {
+        display: none;
     }
+
     footer {
         display: flex;
+    }
+
+    #pesquisar-mobile {
+        margin: auto;
+        display: block;
+    }
+ 
+    #pesquisar-mobile input{
+        height: 20px;
+        width: 50px;
+        border-style: none;
+        border-bottom-style: solid;
+        background-color: transparent;
+        color: white;
     }
 }
