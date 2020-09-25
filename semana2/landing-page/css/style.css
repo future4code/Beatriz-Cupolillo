@@ -77,12 +77,25 @@ main p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.contato-email {
+form{
+    margin: 0 auto;
     text-align: center;
 }
 
-form{
+.contato-email input{
+    max-width: 500px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contato-email textarea{
+    max-width: 500px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 
 #botaoEnviar{
@@ -146,9 +159,6 @@ footer {
         display: flex;
         justify-content: flex-start;
     }
-    .pesquisar{
-        display:none;
-    }
     .menu-flex{
         display:none;
     }
@@ -156,4 +166,3 @@ footer {
         display: flex;
     }
 }
-**/
