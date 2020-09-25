@@ -74,8 +74,43 @@ main h1 {
 
 main p {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
+.contato-email {
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+#botaoEnviar{
+margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #132235;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+}
+  
+form input{
+    max-width:400px;
+    padding: 1em;
+}
+  
+form textarea{
+    max-width:400px;
+    padding:1em;
+}
 
 footer {
     background-color: #132235;
@@ -87,17 +122,25 @@ footer {
     display:flex;
     bottom: 0;
     text-align: center;
-    font-size: 10px;
+    font-size: 8px;
     justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo-footer {
     display: flex;
 }
 
-#p-footer {
-    display: flex;
+#p-footer{
+    margin: auto;
+}
 
+.sns-footer {
+}
+
+.sns-footer a {
+    color: #ffffff;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 699px) {
@@ -113,7 +156,6 @@ footer {
     }
     footer {
         display: flex;
-        justify-content: flex-start;
     }
 }
 **/
