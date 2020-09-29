@@ -97,3 +97,53 @@
 // let userEmail = prompt ("Digite seu e-mail")
 
 // console.log("O e-mail", userEmail, "foi cadastrado com sucesso. Seja bem-vinda(o)", userName, "!")
+
+// Desafios
+
+//Ex 1
+
+// let grKelvin = (77 - 32)*5/9 + 273.15
+// console.log(grKelvin, "K")
+
+// let grFah = 80*9/5 + 32
+// console.log(grFah, "°F")
+
+// let gr2 = 30*9/5 + 32 
+// let gr3 = (gr2 - 32)*5/9 + 273.15
+// console.log(gr2, "°F", gr3, "K")
+
+// let gr2 = prompt ("Digite um número em graus Celsius") *9/5 + 32 
+// let gr3 = (gr2 - 32)*5/9 + 273.15
+// console.log(gr2, "°F", gr3, "K")
+
+// Ex 2
+
+// let valorQwH = 0.05
+// let valorTotal = valorQwH*280
+// console.log (valorTotal)
+// let desconto = valorTotal * 0.15
+// console.log (desconto)
+// console.log(valorTotal-desconto)
+
+// Ex 3
+
+
+// const libras1 = 20 * 0.4536
+// console.log("20 lbs equivalem a", libras1, "kg")
+
+// const oz1 = 10.5 / 3.527
+// console.log("10.5oz equivalem a", oz1, "kg")
+
+// const ft1 = 50 / 3.281
+// console.log("50ft equivalem a", ft1, "m")
+
+// const gl1 = 103.56 * 3.785
+// console.log("103,56 galao equivale a", gl1, "l")
+
+// const xic1 = (540 * 6)/25
+// console.log ("540 xicaras equivalem a", xic1, "l")
+
+// const librasConv = prompt ("Qual a conversão de libras para kg?")
+// let valorUsuario = prompt ("Quantas libras você quer converter?")
+// let valorFinal = valorUsuario * librasConv 
+// console.log (valorFinal)
