@@ -27,7 +27,7 @@
 
 let name
 let age
-console.log(typeof name, age)
+console.log(typeof name, typeof age)
 
 //resposta: undefined;undefined. É impresso para verificar se as variaveis estão funcionando, pois os valores poderão ser atribuidos depois.//
 
@@ -47,8 +47,8 @@ let questionThree
 let questionFour
 let questionFive
 
-questionOne = prompt ("Qual sua cor favorita?")
-console.log(questionOne)
+
+
 
 questionTwo = prompt ("Qual seu desenho favorito?")
 console.log(questionTwo)
