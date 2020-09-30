@@ -109,3 +109,16 @@
 // } else {
 //     console.log("Escolha outro filme =(")
 // }
+// DESAFIOS
+
+// Ex 1
+
+// let generoFilme = prompt("Qual o gênero do filme?").toLowerCase()
+// let valorIngresso = prompt("Qual o valor do ingresso?").toLowerCase()
+// let snack = prompt("Qual snack você vai comprar?")
+
+// if (generoFilme === "fantasia" && valorIngresso <= 15){
+//     console.log("Bom filme com", snack)
+// } else {
+//     console.log("Escolha outro filme =(")
+// }
