@@ -122,3 +122,12 @@
 // } else {
 //     console.log("Escolha outro filme =(")
 // }
+
+// Ex 2
+
+let nomeCompleto = prompt("Qual o seu nome completo?").toLowerCase()
+let tipoJogo = prompt("Qual o tipo de jogo? Escreva DO (doméstico) ou IN (internacional)").toLowerCase()
+let etapaJogo = prompt("Qual a etapa? SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final").toLowerCase()
+let categoria = Number (prompt("Qual a categoria? 1, 2, 3 ou 4?"))
+let qtdIngressos = Number (prompt("Qual a quantidade de ingressos adquiridos? Digite apenas o número"))
+
