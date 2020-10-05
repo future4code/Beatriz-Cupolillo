@@ -94,3 +94,28 @@
 
 // console.log (mostrarDadosSobreMim(meuNome, minhaIdade, minhaCidade, souEstudante))
 
+// Ex 5 
+
+// a)
+
+// let somarDoisNumeros =  (a, b) => {
+//     const soma = a + b
+//     return soma
+// }
+
+// const resultadoSomaDoisNumeros = somarDoisNumeros(50, 875)
+// console.log(resultadoSomaDoisNumeros)
+
+
+// b)
+
+// let numeroMaiorOuIgual = (a, b) => {
+//     if (a >= b){
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// const resultadoNumeroMaiorOuIgual = numeroMaiorOuIgual (30, 30)
+// console.log (resultadoNumeroMaiorOuIgual)
