@@ -119,3 +119,13 @@
 
 // const resultadoNumeroMaiorOuIgual = numeroMaiorOuIgual (30, 30)
 // console.log (resultadoNumeroMaiorOuIgual)
+
+// c)
+
+// let repetirDezVezes = (mensagem) =>{
+//     for (let i = 0; i < 10; i++){
+//         console.log(mensagem)
+//     }
+// }
+
+// const mensagemMultiplicada = repetirDezVezes ("Olá, Mundo")
