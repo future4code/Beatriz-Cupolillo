@@ -129,3 +129,30 @@
 // }
 
 // const mensagemMultiplicada = repetirDezVezes ("Olá, Mundo")
+
+// Ex 6 
+
+// a)
+
+// const arrayDeNumeros = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+
+// let contadorDeArray = (arrayDeNumeros) => {
+//     return arrayDeNumeros.length
+// }
+
+// console.log(contadorDeArray(arrayDeNumeros))
+
+// b)
+
+// let verificarSePar = (Number) => {
+//     if (Number % 2 === 0){ 
+//         return true
+//     }else{ 
+//         return false
+//     }
+// }
+
+// const resultadoSePar = verificarSePar(12)
+// const resultadoSePar2 = verificarSePar (17)
+// console.log(resultadoSePar)
+// console.log(resultadoSePar2)
