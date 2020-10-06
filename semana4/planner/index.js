@@ -34,3 +34,29 @@ function criarTarefa() {
         }
     }
 }
+
+function riscarTarefa1 () {
+    document.getElementById("domingo").style.textDecoration="line-through"
+}
+function riscarTarefa2 () {
+    document.getElementById("segunda").style.textDecoration="line-through"
+}
+function riscarTarefa3 () {
+    document.getElementById("terca").style.textDecoration="line-through"
+}
+function riscarTarefa4 () {
+    document.getElementById("quarta").style.textDecoration="line-through"
+}
+function riscarTarefa5 () {
+    document.getElementById("quinta").style.textDecoration="line-through"
+}
+function riscarTarefa6 () {
+    document.getElementById("sexta").style.textDecoration="line-through"
+}
+function riscarTarefa7 () {
+    document.getElementById("sabado").style.textDecoration="line-through"
+}
+
+function limparTarefas () {
+    
+}
