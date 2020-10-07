@@ -19,14 +19,15 @@ function criarPost() {
     arrayDePost = [...arrayDePost,novoPost]
     console.log(arrayDePost)
 
-    tituloPost.value = ""
-    autorPost.value =""
-    conteudoPost.value =""
+    let publicarConteudo = document.getElementById("container-de-posts");{
+        publicarConteudo.innerHTML += `<h1>${tituloPost.value}</h1>`
+        publicarConteudo.innerHTML += `<h3>${autorPost.value}</h3>`
+        publicarConteudo.innerHTML += `<p>${conteudoPost.value}</p>`
 
+        tituloPost.value = ""
+        autorPost.value =""
+        conteudoPost.value =""
+    }
 }
 
 
-function inserirPost () {
-    let publicarConteudo = document.getElementById("container-de-posts");
-
-}
