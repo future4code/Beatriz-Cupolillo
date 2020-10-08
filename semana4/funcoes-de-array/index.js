@@ -8,7 +8,7 @@ function imprimirDespesas(despesas) {
   let divDespesas = document.getElementById("despesas");
   divDespesas.innerHTML = "<p><u>Despesas Detalhadas</u></p>";
 
-  // A função percorre cada despesa e incrementa no meu array de despesas.
+  // A função percorre cada despesa e incrementa no meu array de despesas. Depois imprime no HTML dentro da div Despesas o gasto preenchido.
   despesas.forEach((despesa, index, arrDespesas) => {
     let novaDespesa = `
             <p>VALOR R$: ${despesa.valor} | TIPO: ${despesa.tipo} | DESCRIÇÃO: ${despesa.descricao}</p>
@@ -26,6 +26,10 @@ function imprimirExtrato() {
   let gastoViagem = 0;
 
   // AQUI VEM A IMPLEMENTAÇÃO
+
+  extratoCompleto.forEach((extrato, index, extratos) => {
+      
+  }
 
   divExtrato.innerHTML = `<p>Extrato: Gasto Total: R$${gastoTotal} | Alimentação: R$${gastoAlimentacao} | 
                                         Utilidades: R$${gastoUtilidades} | Viagem: R$${gastoViagem}</p>`;
