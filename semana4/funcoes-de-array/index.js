@@ -25,7 +25,7 @@ function imprimirExtrato() {
   let gastoUtilidades = 0;
   let gastoViagem = 0;
 
-  // AQUI VEM A IMPLEMENTAÇÃO
+  // A função percorre o array e verifica quais objetos possuem o mesmo texto e acrescenta em seu devido gasto.
 
     arrDespesas.forEach((despesa, index, despesas) => {
         if (despesa.tipo === "alimentação") {
@@ -89,7 +89,11 @@ function filtrarDespesas() {
   let valorMin = Number(document.getElementById("valorFiltroMin").value);
   let valorMax = Number(document.getElementById("valorFiltroMax").value);
 
-  let despesasFiltradas; // AQUI NESSA VARIÁVEL VEM A IMPLEMENTAÇÃO
+  let despesasFiltradas = arrDespesas.filter((despesa) => {
+    if (tipoFiltro === despesa.tipo && despesa.valor >= valorMin && despesa.valor <= valorMax){
+        return true
+    }
+  })
 
   imprimirDespesas(despesasFiltradas);
 }
