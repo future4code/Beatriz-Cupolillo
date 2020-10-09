@@ -19,3 +19,10 @@
 // será impresso o array inteiro no primeiro loop, pois nenhum número é maior que infinito.
 // no segundo será impresso o array inteiro exceto o -10, pois é menor que 0.
 
+// Exercicios de lógica
+
+// Pode se percorrer um array com For/ For of, ForEach , While.
+// let i 
+// for (i=0; i <= 30; i++)
+// console.log (i) // formará um loop do 0 até o 30, enquanto for menor ou igual que 30 os numeros serão impressos
+
