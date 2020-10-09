@@ -9,3 +9,7 @@
 // Serão aplicados 150 em ações e 200 na poupança.
 // retornará (150*1.1) em ações e (200*1.03) na poupança. 
 
+// 3 - A função possui 1 array de numeros e 2 arrays vazios. O calculo é para saber se o número é par, se sim inclui-lo no
+// array1 vazio, se for impar irá para o array2 vazio. 
+// depois mostrará a quantidade de numeros dentro do array original e dentro dos arrays de numeros pares e impares.
+
