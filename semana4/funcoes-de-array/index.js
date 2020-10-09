@@ -27,9 +27,21 @@ function imprimirExtrato() {
 
   // AQUI VEM A IMPLEMENTAÇÃO
 
-  extratoCompleto.forEach((extrato, index, extratos) => {
-      
-  }
+    arrDespesas.forEach((despesa, index, despesas) => {
+        if (despesa.tipo === "alimentação") {
+        gastoAlimentacao += despesa.valor
+        } else if
+        (despesa.tipo === "utilidades"){
+            gastoUtilidades += despesa.valor
+        } else if
+        (despesa.tipo === "viagem"){
+            gastoViagem += despesa.valor
+        } else {
+            window.alert("Não existe essa categoria de despesa")
+        }
+
+        gastoTotal = (gastoAlimentacao + gastoUtilidades + gastoViagem)
+    })
 
   divExtrato.innerHTML = `<p>Extrato: Gasto Total: R$${gastoTotal} | Alimentação: R$${gastoAlimentacao} | 
                                         Utilidades: R$${gastoUtilidades} | Viagem: R$${gastoViagem}</p>`;
