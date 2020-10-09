@@ -21,8 +21,28 @@
 
 // Exercicios de lógica
 
+//Ex1
+
 // Pode se percorrer um array com For/ For of, ForEach , While.
 // let i 
 // for (i=0; i <= 30; i++)
 // console.log (i) // formará um loop do 0 até o 30, enquanto for menor ou igual que 30 os numeros serão impressos
+
+// Ex 2
+
+//const booleano1 = true
+// const booleano2 = false
+// const booleano3 = !booleano2 / true
+// const booleano4 = !booleano3  / false
+
+// a) `booleano1 && booleano2 && !booleano4` - Resp : False
+
+// b) `(booleano1 && booleano2) || !booleano3` - Resp: False
+
+// c)  `(booleano2 || booleano3) && (booleano4 || booleano1)` true && true - Resp : True
+
+// d) `!(booleano2 && booleano3) || !(booleano1 && booleano3)` !(false & true) True || !(true && true) false - Resp: True
+
+// e) `!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)` !(true) && !(true)  = False || !(true && true && True) = False. 
+//Resp: False
 
