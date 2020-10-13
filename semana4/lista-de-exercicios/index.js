@@ -7,15 +7,15 @@
 // Cada opção retorna o valor aplicado * o quanto o investimento rende.
 // caso nao escolha nenhum dos investimentos possiveis, retornará um alerta para o usuário escolher um invest. válido.
 // Serão aplicados 150 em ações e 200 na poupança.
-// retornará (150*1.1) em ações e (200*1.03) na poupança. 
+// retornará (150*1.1) em ações e (200*1.03) na poupança.
 
 // 3 - Existe 1 array de numeros e 2 arrays vazios. O calculo é para saber se o número é par, se sim inclui-lo no
-// array1 vazio, se for impar irá para o array2 vazio. 
+// array1 vazio, se for impar irá para o array2 vazio.
 // depois mostrará a quantidade de numeros dentro do array original e dentro dos arrays de numeros pares e impares.
 
 // 4 - É declarado o valor de 3 arrays. 1 array de numeros, 1 de número infinito e um de valor 0.
 // o loop irá verificar se o primeiro array de numero é menor do que infinito, se sim, irá igualar o valor da variavel numero = numero1
-// o segundo verificará se o array 2 é maior do que o array valor 0, se sim, igualará os valores. 
+// o segundo verificará se o array 2 é maior do que o array valor 0, se sim, igualará os valores.
 // será impresso o array inteiro no primeiro loop, pois nenhum número é maior que infinito.
 // no segundo será impresso o array inteiro exceto o -10, pois é menor que 0.
 
@@ -24,7 +24,7 @@
 //Ex1
 
 // Pode se percorrer um array com For/ For of, ForEach , While.
-// let i 
+// let i
 // for (i=0; i <= 30; i++)
 // console.log (i) // formará um loop do 0 até o 30, enquanto for menor ou igual que 30 os numeros serão impressos
 
@@ -43,7 +43,7 @@
 
 // d) `!(booleano2 && booleano3) || !(booleano1 && booleano3)` !(false & true) True || !(true && true) false - Resp: True
 
-// e) `!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)` !(true) && !(true)  = False || (!true && true && True) = False. 
+// e) `!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)` !(true) && !(true)  = False || (!true && true && True) = False.
 //Resp: False
 
 // Ex 3
@@ -64,3 +64,26 @@
 //   console.log(i*2)
 //   i++
 // }
+
+// Ex 4
+
+// Ex 5
+
+// let verificarDoisNumeros = (a, b) => {
+//   if (a < b) {
+//     console.log(`O maior é: ${a}`);
+//   } else if (b > a) {
+//     console.log(`O maior é: ${b}`);
+//   } else {
+//     console.log(`${a} e ${b} são iguais!`);
+//   }
+//   if (a % b !== 0 && b % a === 0) {
+//     console.log(`${a} não é divisível por ${b} `);
+//     console.log(`${b} é divisível por ${a} `);
+//   } else if (a % b === 0 || b % a !== 0) {
+//     console.log(`${a} é divisível por ${b}`);
+//     console.log(`${b} não é divisível por ${a}`);
+//   }
+// };
+
+// verificarDoisNumeros(15, 30)
