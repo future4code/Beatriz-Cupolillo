@@ -102,4 +102,18 @@
 
 // Ex de Objetos
 
-// 1 - 
+// 1 - Objetos são formas que os programadores criam suas próprias funções e variáveis e guardam dentro de uma "caixinha" com nomes que fazem sentido para aquela aplicação, ou seja, é uma forma mais organizada de guardar elementos complexos de forma limpa e organizada.
+
+// 2 - 
+
+// 3 - 
+const meuFilmePreferido = {
+    titulo: "Kimi no na wa",
+    ano: 2017,
+    diretor: "Makoto Shinkai",
+    atores: ["Ryunosuke Kamiki", "Mone Kamishiraishi"] 
+}
+
+console.log(`Meu filme favorito é ${meuFilmePreferido.titulo}, lançado no ano de ${meuFilmePreferido.ano}, produzido por ${meuFilmePreferido.diretor} e os atores são: ${meuFilmePreferido.atores}`)
+
+// 4- 
