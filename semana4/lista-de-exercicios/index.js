@@ -43,6 +43,24 @@
 
 // d) `!(booleano2 && booleano3) || !(booleano1 && booleano3)` !(false & true) True || !(true && true) false - Resp: True
 
-// e) `!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)` !(true) && !(true)  = False || !(true && true && True) = False. 
+// e) `!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)` !(true) && !(true)  = False || (!true && true && True) = False. 
 //Resp: False
 
+// Ex 3
+
+//const quantidadeDeNumerosPares
+// let i = 0
+// while(i <= quantidadeDeNumerosPares) {
+//   console.log(i*2)
+// }
+
+// Não funciona, pois a variavel não foi inicializada com nenhum número, além de não incrementar o i ao final do loop, gerando loop infinito.
+
+// Código corrigido:
+
+// const quantidadeDeNumerosPares = prompt("Digite algum número")
+// let i = 0
+// while(i <= quantidadeDeNumerosPares) {
+//   console.log(i*2)
+//   i++
+// }
