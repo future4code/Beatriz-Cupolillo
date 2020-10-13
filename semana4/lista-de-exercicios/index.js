@@ -104,14 +104,14 @@
 
 // 1 - Objetos são formas que os programadores criam suas próprias funções e variáveis e guardam dentro de uma "caixinha" com nomes que fazem sentido para aquela aplicação, ou seja, é uma forma mais organizada de guardar elementos complexos de forma limpa e organizada.
 
-// 2 - 
+// 2 - não funciona... rever
 
-// const medidasRetangulo = {
+// const medidasRetangulo = [{
 //     largura: lado1,
 //     altura: lado2,
 //     perimetro: 2*(lado1 + lado2),
 //     area: (lado1 * lado2)
-// }
+// }]
 
 // function criaRetangulo(lado1, lado2) {
 //     return medidasRetangulo
@@ -143,3 +143,30 @@
 // })
 
 // console.log(pessoa)
+
+// Ex Arrays
+
+// 1 - 
+// a -
+
+let algumasPessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+// const maioresDeVinte = algumasPessoas.filter((pessoa)=> {
+//     return pessoa.idade >= 20
+// })
+
+// console.log(maioresDeVinte)
+
+//b -
+
+const menoresDeVinte = algumasPessoas.filter((pessoa)=>{
+    return pessoa.idade < 20
+})
+
+console.log(menoresDeVinte)
+
