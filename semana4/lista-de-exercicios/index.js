@@ -149,24 +149,78 @@
 // 1 - 
 // a -
 
-let algumasPessoas = [
-	{ nome: "Pedro", idade: 20 },
-	{ nome: "João", idade: 10 },
-	{ nome: "Paula", idade: 12 },
-	{ nome: "Artur", idade: 89 } 
-]
+// let algumasPessoas = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
 
-// const maioresDeVinte = algumasPessoas.filter((pessoa)=> {
-//     return pessoa.idade >= 20
+// // const maioresDeVinte = algumasPessoas.filter((pessoa)=> {
+// //     return pessoa.idade >= 20
+// // })
+
+// // console.log(maioresDeVinte)
+
+// //b -
+
+// const menoresDeVinte = algumasPessoas.filter((pessoa)=>{
+//     return pessoa.idade < 20
 // })
 
-// console.log(maioresDeVinte)
+// console.log(menoresDeVinte)
 
-//b -
+// EX 2
 
-const menoresDeVinte = algumasPessoas.filter((pessoa)=>{
-    return pessoa.idade < 20
-})
+// const array = [1, 2, 3, 4, 5, 6]
 
-console.log(menoresDeVinte)
+// // a
 
+// // const arrayVezesDois = array.map((numero)=> {
+// //     return (numero) * 2
+// // })
+
+// // console.log(arrayVezesDois)
+
+// // // b
+
+// // const arrayVezesTresString = array.map((numero)=> {
+// //     return `${numero*3}`
+
+// // })
+
+// // console.log(arrayVezesTresString)
+
+// // c
+
+// const parOuImpar = array.map((numero)=> {
+//     if (numero % 2 === 0){
+//     return `${numero} é Par`
+// }else{
+//     return `${numero} é Impar`
+// }
+// })
+// console.log(parOuImpar)
+
+// Ex 3
+
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+
+// const possuiPermissao = pessoas.filter((pessoa) => {
+//     return pessoa.idade > 14 && pessoa.idade < 60 && pessoa.altura > 1.5
+// })
+
+// console.log(possuiPermissao)
+
+// const naoPossuiPermissao = pessoas.filter((pessoa) => {
+//     return pessoa.idade < 14 || pessoa.idade > 60 || pessoa.altura < 1.5
+// })
+
+// console.log (naoPossuiPermissao)
