@@ -130,3 +130,16 @@
 // console.log(`Meu filme favorito é ${meuFilmePreferido.titulo}, lançado no ano de ${meuFilmePreferido.ano}, produzido por ${meuFilmePreferido.diretor} e os atores são: ${meuFilmePreferido.atores}`)
 
 // 4- 
+
+// const pessoa = [{
+//     nome: "Beatriz",
+//     idade: 26,
+//     email: "beatrizcupolillo@gmail.com",
+//     endereco: "Vila Mariana, São paulo"
+// }]
+
+// const anonimizarPessoa = pessoa.map((parametro1) => { 
+//     return parametro1.nome = "Anonimo"
+// })
+
+// console.log(pessoa)
