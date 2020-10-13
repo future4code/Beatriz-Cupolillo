@@ -12,10 +12,10 @@ body {
 }
 
 header {
-  background-color: orange;
+  background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 50px;
   height: 10%;
 }
@@ -23,6 +23,11 @@ header {
 main {
   min-height: 80%;
   display: flex;
+}
+
+#campoDeBusca {
+  width: 400px;
+
 }
 
 .menu-vertical {
