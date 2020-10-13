@@ -106,14 +106,27 @@
 
 // 2 - 
 
-// 3 - 
-const meuFilmePreferido = {
-    titulo: "Kimi no na wa",
-    ano: 2017,
-    diretor: "Makoto Shinkai",
-    atores: ["Ryunosuke Kamiki", "Mone Kamishiraishi"] 
-}
+// const medidasRetangulo = {
+//     largura: lado1,
+//     altura: lado2,
+//     perimetro: 2*(lado1 + lado2),
+//     area: (lado1 * lado2)
+// }
 
-console.log(`Meu filme favorito é ${meuFilmePreferido.titulo}, lançado no ano de ${meuFilmePreferido.ano}, produzido por ${meuFilmePreferido.diretor} e os atores são: ${meuFilmePreferido.atores}`)
+// function criaRetangulo(lado1, lado2) {
+//     return medidasRetangulo
+// }
+
+// criaRetangulo(10,30)
+
+// 3 - 
+// const meuFilmePreferido = {
+//     titulo: "Kimi no na wa",
+//     ano: 2017,
+//     diretor: "Makoto Shinkai",
+//     atores: ["Ryunosuke Kamiki", "Mone Kamishiraishi"] 
+// }
+
+// console.log(`Meu filme favorito é ${meuFilmePreferido.titulo}, lançado no ano de ${meuFilmePreferido.ano}, produzido por ${meuFilmePreferido.diretor} e os atores são: ${meuFilmePreferido.atores}`)
 
 // 4- 
