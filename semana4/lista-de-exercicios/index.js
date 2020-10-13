@@ -87,3 +87,15 @@
 // };
 
 // verificarDoisNumeros(15, 30)
+
+// Ex de Funções
+
+// Ex 1
+
+// Ex 2
+
+// let msgHello = () => {
+//     console.log("Hello Labenu!")
+// }
+
+// msgHello()
