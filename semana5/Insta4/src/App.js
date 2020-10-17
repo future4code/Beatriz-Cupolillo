@@ -58,11 +58,9 @@ class App extends React.Component {
       fotoPost: this.state.valorInputFotoPost
     };
 
-    const novosPosts = [postNovo, ...this.state.arrayPosts];
+    const novosPosts = [...this.state.arrayPosts, postNovo];
     this.setState({ arrayDePosts: novosPosts });
-    this.setState({ valorInputNomeUsuario: "" });
-    this.setState({ valorInputFotoUsuario: "" });
-    this.setState({ valorInputFotoPost: "" });
+
   };
 
   onChangeInputNomeUsuario = (event) => {
