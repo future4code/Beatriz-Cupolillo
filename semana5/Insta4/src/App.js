@@ -15,14 +15,12 @@ const Input = styled.input`
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
-  display: flex;
 `;
 
 const BotaoAdd = styled.button`
   margin-bottom: 40px;
   padding: 4px;
   border-radius: 5px;
-  display: flex;
 `;
 
 const LogoTopo = styled.img`
@@ -57,7 +55,7 @@ class App extends React.Component {
     const postNovo = {
       nomeUsuario: this.state.valorInputNomeUsuario,
       fotoUsuario: this.state.valorInputFotoUsuario,
-      fotoPost: this.state.valorInputFotoPost,
+      fotoPost: this.state.valorInputFotoPost
     };
 
     const novosPosts = [postNovo, ...this.state.arrayPosts];
@@ -86,6 +84,7 @@ class App extends React.Component {
           nomeUsuario={post.nomeUsuario}
           fotoUsuario={post.fotoUsuario}
           fotoPost={post.fotoPost}
+          key={index}
         />
       );
     });
