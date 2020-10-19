@@ -26,7 +26,7 @@ class App extends React.Component {
       case 4:
         return <Etapa4 />;
       default:
-        break
+        break;
     }
   };
 
@@ -34,7 +34,9 @@ class App extends React.Component {
     return (
       <div>
         {this.RenderizaEtapa()}
-        <button onClick = {this.IrParaProximaEtapa} >Próxima Etapa</button>
+        {this.state.etapa !== 4 && (
+          <button onClick={this.IrParaProximaEtapa}>Próxima Etapa</button>
+        )}
       </div>
     );
   }
