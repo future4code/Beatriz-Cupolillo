@@ -44,16 +44,19 @@ class UserList extends React.Component {
   };
 
   deleteUser = (userId) => {
+    if (window.confirm(`Tem certeza que deseja deletar?`)) {
     axios
       .delete(`${baseUrl}/${userId}`, axiosConfig)
       .then((response) => {
-        alert("Usuário deletado com sucesso!");
-        this.getAllUsers();
+        window.alert("Usuário deletado com sucesso!");
+        this.getUsers();
       })
       .catch((error) => {
+        window.alert ("Algo deu errado...Tente novamente")
         console.log(error.message);
       });
-  };
+  }
+}
 
   render() {
     const RenderUser = this.state.users.map((user) => {
