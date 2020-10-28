@@ -1,47 +1,38 @@
 import React from "react";
 import axios from "axios";
+import Register from "./Components/Register";
+import UserList from "./Components/UserList";
 
-
-
-class App extends React.Component{
+class App extends React.Component {
   state = {
-    users: [],
-    inputName: "",
-    inputEmail: ""
-  }
-
-  getUser = () => {
-    axios
-      .get(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-        {
-          headers: {
-            Authorization: "beatriz-cupolillo-dumont"
-          }
-        }
-      )
-      .then((response) => {
-        this.setState({users: response.data });
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
+    userRegister: true,
+    buttonUser: "Lista de Usuários Cadastrados",
   };
 
+  goToUserList = () => {
+    if (this.state.userRegister) {
+      this.setState({ userRegister: false });
+      this.setState({ botao: "Cadastro de Novos Usuários" });
+    } else {
+      this.setState({ userRegister: true });
+      this.setState({ botao: "Mostrar Usuários" });
+    }
+  };
   render() {
+    const renderUser = () => {
+      if (this.state.userRegister) {
+        return <Register />;
+      } else {
+        return <UserList />;
+      }
+    };
     return (
-      <div className="App">
-        <div>
-          <label>Nome:</label>
-          <input type="text"/>
-          <label>E-mail:</label>
-          <input type="email"/>
-          <button>Salvar</button>
-        </div>
+      <div>
+        <button onClick={this.goToUserList}>{this.state.buttonUser} </button>
+        <div>{renderUser()}</div>
       </div>
     );
   }
 }
-
 
 export default App;
