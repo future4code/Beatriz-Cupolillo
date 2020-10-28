@@ -31,11 +31,11 @@ class Register extends React.Component {
       )
       .then((response) => {
         this.setState({ nameValue: "", emailValue: "" });
-        alert("Usuário Cadastrado");
+        alert("Usuário Cadastrado com sucesso");
       })
       .catch((error) => {
         console.log(error.message);
-        alert("Algo deu errado...");
+        // alert("Algo deu errado...Tente de novo");
       });
   };
   render() {

@@ -44,6 +44,7 @@ class UserList extends React.Component {
       })
       .catch((error) => {
         console.log(error.message);
+        alert("Algo deu errado... Tente de novo");
       });
   };
 
