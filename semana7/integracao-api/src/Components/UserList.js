@@ -1,5 +1,18 @@
 import React from "react";
 import axios from "axios";
+import styled from "styled-components"
+
+const DeleteButton = styled.span`
+  color: red;
+`;
+
+const baseUrl = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users";
+
+const axiosConfig = {
+  headers: {
+    Authorization: "beatriz-cupolillo-dumont"
+  }
+};
 
 class UserList extends React.Component {
   state = {
@@ -12,14 +25,7 @@ class UserList extends React.Component {
 
   getUsers = () => {
     axios
-      .get(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-        {
-          headers: {
-            Authorization: "beatriz-cupolillo-dumont",
-          },
-        }
-      )
+      .get(baseUrl, axiosConfig)
       .then((response) => {
         this.setState({ users: response.data });
       })
@@ -29,9 +35,28 @@ class UserList extends React.Component {
       });
   };
 
+  deleteUser = (userId) => {
+    axios
+      .delete(`${baseUrl}/${userId}`, axiosConfig)
+      .then((response) => {
+        alert("Usuário deletado com sucesso!");
+        this.getAllUsers();
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
   render() {
     const RenderUser = this.state.users.map((user) => {
-      return <p key={user.id}> {user.name} </p>;
+      return (
+        <p key={user.id}> 
+        {user.name} 
+        <DeleteButton onClick={() => this.deleteUser(user.id)}>
+            X
+        </DeleteButton>
+      </p>
+      );
     });
     return (
       <div>
