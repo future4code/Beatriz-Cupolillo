@@ -1,5 +1,13 @@
 import React from "react";
 import axios from "axios";
+import styled from "styled-components";
+
+const RegisterContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+`;
 
 class Register extends React.Component {
   state = {
@@ -26,7 +34,7 @@ class Register extends React.Component {
         {
           headers: {
             Authorization: "beatriz-cupolillo-dumont",
-          },
+          }
         }
       )
       .then((response) => {
@@ -35,12 +43,11 @@ class Register extends React.Component {
       })
       .catch((error) => {
         console.log(error.message);
-        // alert("Algo deu errado...Tente de novo");
       });
   };
   render() {
     return (
-      <div>
+      <RegisterContainer>
         <h3>Cadastro Usuário</h3>
         <div>
           <label>Nome:</label>
@@ -58,8 +65,8 @@ class Register extends React.Component {
             onChange={this.onChangeEmailValue}
           />
         </div>
-        <button onClick={this.createNewUser}>Salvar</button>
-      </div>
+        <button onClick={this.createNewUser}>Cadastrar Usuário</button>
+      </RegisterContainer>
     );
   }
 }
