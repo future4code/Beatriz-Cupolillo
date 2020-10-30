@@ -6,13 +6,15 @@ import styled from "styled-components";
 
 const AppContainer = styled.div `
   background-color: #f2f2f2;
+  width: 100vw;
+  height: 100vh;
 `
 
 
 
 class App extends React.Component {
   state = {
-    createPlaylist: false,
+    createPlaylist: true,
     AllPlaylists: true
   };
 

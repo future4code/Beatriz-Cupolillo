@@ -11,6 +11,15 @@ const axiosConfig = {
   },
 };
 
+const PlaylistContainer = styled.div`
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const ButtonDelete = styled.button``
+
 class CreatePlaylist extends React.Component {
   state = {
     playlistValue: "",

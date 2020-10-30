@@ -8,9 +8,18 @@ const DeleteButton = styled.button `
     border: 2px tomato solid;
     background-color: white;
     padding: 4px;
+    margin-left: 20px;
     &:hover{
         background-color: #f2f2f2;
     }
+`
+const PlaylistContainer = styled.div`
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  max-width: 30%;
 `
 
 const baseUrl =
@@ -62,10 +71,10 @@ class AllPlaylists extends React.Component {
         });
         
         return (
-            <div>
+            <PlaylistContainer>
                 <h3>Playlists</h3>
                 {renderedPlaylists}
-              </div>
+              </PlaylistContainer>
             );
           }
     }
