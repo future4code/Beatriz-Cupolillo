@@ -21,15 +21,16 @@ export const PlaylistContainer = styled.div`
  }
 `
 export const CreatePlaylistButton = styled.button `
-    color: blue;
+    color: black;
     border-radius: 3px;
-    border: 2px blue solid;
-    background-color: white;
+    border: 2px pink solid;
+    background-color: pink;
     padding: 4px;
     margin-top: 20px;
     margin-bottom: 20px;
     &:hover{
         background-color: #f2f2f2;
+        color:black;
     }
 `
 
@@ -63,5 +64,8 @@ export const HeaderContainer = styled.div `
     >h1{
         color: pink;
         margin-left: 20px;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 2.8em;
     }
 `
+
