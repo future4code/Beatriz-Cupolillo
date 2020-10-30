@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const AppContainer = styled.div `
 background-color: #2e2c2f;
-width: 100vw;
-height: 100vh;
+max-width: 100%;
+max-height: 100%;
 display: flex;
 flex-direction: column;
 `
@@ -15,6 +15,7 @@ export const PlaylistContainer = styled.div`
   align-items: center;
   max-width: 30%;
   margin: 10px;
+  margin-top: 15px;
   border: 1px solid #E6E8E6;
  > h3 {
      color: white;
@@ -61,6 +62,7 @@ export const HeaderContainer = styled.div `
     display:flex;
     padding: 10px;
     height: 14vh;
+    margin-bottom: 10px;
     >h1{
         color: pink;
         margin-left: 20px;

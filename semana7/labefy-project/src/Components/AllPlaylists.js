@@ -6,6 +6,8 @@ import { DeleteButton, AllPlaylistsContainer } from "./Style"
 const baseUrl =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
 
+const baseUrl2 = "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks"
+
 const axiosConfig = {
   headers: {
     Authorization: "beatriz-cupolillo-dumont",
@@ -14,7 +16,10 @@ const axiosConfig = {
 
 class AllPlaylists extends React.Component {
     state = {
-        allPlaylists: []
+        allPlaylists: [],
+        detailedPlaylist: [],
+        allDetails: false,
+        playlistName: ""
     }
 
     componentDidMount = () => {
@@ -43,6 +48,29 @@ class AllPlaylists extends React.Component {
             }
         }
     }
+
+    // playlistDetails = () =>{
+    //   this.setState({allDetails: !this.state.allDetails})
+    // }
+
+    // getTracks = (id, name) => {
+    //   this.goToDetails();
+  
+    //   axios
+    //     .get(
+    //       baseUrl2, axiosConfig 
+    //     )
+    //     .then((response) => {
+    //       this.setState({ detailsPlaylist: response.data.result.tracks });
+    //       this.setState({ playlistName: name });
+    //       console.log(response.data.result.tracks);
+    //       console.log(this.state.playlistName);
+    //     })
+    //     .catch((error) => {
+    //       console.log(error.message);
+    //     });
+    // };
+
 
     render() {
         const renderedPlaylists = this.state.allPlaylists.map((playlist) => {
