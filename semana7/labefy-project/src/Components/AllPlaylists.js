@@ -1,26 +1,7 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components";
-
-const DeleteButton = styled.button `
-    color: tomato;
-    border-radius: 3px;
-    border: 2px tomato solid;
-    background-color: white;
-    padding: 4px;
-    margin-left: 20px;
-    &:hover{
-        background-color: #f2f2f2;
-    }
-`
-const PlaylistContainer = styled.div`
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  max-width: 30%;
-`
+import { DeleteButton, AllPlaylistsContainer } from "./Style"
 
 const baseUrl =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -71,10 +52,10 @@ class AllPlaylists extends React.Component {
         });
         
         return (
-            <PlaylistContainer>
+            <AllPlaylistsContainer>
                 <h3>Playlists</h3>
                 {renderedPlaylists}
-              </PlaylistContainer>
+              </AllPlaylistsContainer>
             );
           }
     }

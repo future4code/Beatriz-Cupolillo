@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components";
+import { CreatePlaylistButton, PlaylistContainer } from "./Style"
 
 const baseUrl =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -10,15 +11,6 @@ const axiosConfig = {
     Authorization: "beatriz-cupolillo-dumont",
   },
 };
-
-const PlaylistContainer = styled.div`
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-const ButtonDelete = styled.button``
 
 class CreatePlaylist extends React.Component {
   state = {
@@ -45,15 +37,15 @@ class CreatePlaylist extends React.Component {
   
   render() {
     return (
-      <div>
-        <h2>Crie sua nova Playlist</h2>
+      <PlaylistContainer>
+        <h3>Crie sua nova Playlist</h3>
         <input
           value={this.state.playlistValue}
           placeholder="Digite o nome desejado"
           onChange={this.onChangePlaylistValue}
         />
-        <button onClick={this.createPlaylist}>Criar Nova Playlist</button>
-      </div>
+        <CreatePlaylistButton onClick={this.createPlaylist}>Criar Nova Playlist</CreatePlaylistButton>
+      </PlaylistContainer>
     );
   }
 }

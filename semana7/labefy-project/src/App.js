@@ -3,13 +3,7 @@ import React from "react";
 import CreatePlaylists from "./Components/CreatePlaylist";
 import AllPlaylists from "./Components/AllPlaylists"
 import styled from "styled-components";
-
-const AppContainer = styled.div `
-  background-color: #f2f2f2;
-  width: 100vw;
-  height: 100vh;
-`
-
+import { AppContainer } from "./Components/Style"
 
 
 class App extends React.Component {
@@ -19,11 +13,12 @@ class App extends React.Component {
   };
 
   render() {
-    const currentPage = <AllPlaylists/>
+    const createdPlaylists = <AllPlaylists/>
+    const newPlaylists = <CreatePlaylists/>
       return (
         <AppContainer>
-          <h1></h1>
-            {currentPage}
+            {createdPlaylists}
+            {newPlaylists}
           </AppContainer>
     )
   }
