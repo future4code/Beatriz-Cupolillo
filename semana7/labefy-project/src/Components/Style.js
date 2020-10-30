@@ -15,6 +15,9 @@ export const PlaylistContainer = styled.div`
   align-items: center;
   max-width: 30%;
   border: 1px solid white;
+ > h3 {
+     color: white;
+ }
 `
 export const CreatePlaylistButton = styled.button `
     color: blue;
@@ -37,9 +40,6 @@ export const AllPlaylistsContainer = styled.div`
   border: 1px solid white;
   color: white;
   max-width: 30%;
-  > h3 {
-    color: white;
-  }
 `
 
 export const DeleteButton = styled.button `

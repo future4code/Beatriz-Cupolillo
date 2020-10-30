@@ -55,7 +55,7 @@ class AllPlaylists extends React.Component {
             <AllPlaylistsContainer>
                 <h3>Playlists</h3>
                 {renderedPlaylists}
-              </AllPlaylistsContainer>
+            </AllPlaylistsContainer>
             );
           }
     }

@@ -2,7 +2,6 @@ import { render } from "@testing-library/react";
 import React from "react";
 import CreatePlaylists from "./Components/CreatePlaylist";
 import AllPlaylists from "./Components/AllPlaylists"
-import styled from "styled-components";
 import { AppContainer } from "./Components/Style"
 
 
@@ -17,8 +16,8 @@ class App extends React.Component {
     const newPlaylists = <CreatePlaylists/>
       return (
         <AppContainer>
-            {createdPlaylists}
             {newPlaylists}
+            {createdPlaylists}
           </AppContainer>
     )
   }
