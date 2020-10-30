@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div `
-background-color: black;
+background-color: #2e2c2f;
 width: 100vw;
 height: 100vh;
 display: flex;
@@ -14,7 +14,8 @@ export const PlaylistContainer = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 30%;
-  border: 1px solid white;
+  margin: 10px;
+  border: 1px solid #E6E8E6;
  > h3 {
      color: white;
  }
@@ -40,6 +41,7 @@ export const AllPlaylistsContainer = styled.div`
   border: 1px solid white;
   color: white;
   max-width: 30%;
+  margin: 10px;
 `
 
 export const DeleteButton = styled.button `
@@ -54,3 +56,12 @@ export const DeleteButton = styled.button `
     }
 `
 
+export const HeaderContainer = styled.div `
+    display:flex;
+    padding: 10px;
+    height: 14vh;
+    >h1{
+        color: pink;
+        margin-left: 20px;
+    }
+`
