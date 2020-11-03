@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components";
-import { DeleteButton, AllPlaylistsContainer } from "./Style"
+import { DeleteButton, AllPlaylistsContainer, OpenButton } from "./Style"
 
 const baseUrl =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -49,6 +49,7 @@ class AllPlaylists extends React.Component {
         }
     }
 
+    // Não consegui desenvolver a lógica para abrir a playlist e verificar e add as músicas
     // playlistDetails = () =>{
     //   this.setState({allDetails: !this.state.allDetails})
     // }
@@ -76,6 +77,7 @@ class AllPlaylists extends React.Component {
         const renderedPlaylists = this.state.allPlaylists.map((playlist) => {
         return <p key={playlist.id}>{playlist.name}
         <DeleteButton onClick={() => this.deletePlaylists(playlist.id)}>Delete</DeleteButton>
+        <OpenButton>Abrir Playlist</OpenButton>
         </p>;
         });
         
