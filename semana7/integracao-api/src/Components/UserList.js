@@ -2,8 +2,16 @@ import React from "react";
 import axios from "axios";
 import styled from "styled-components"
 
-const DeleteButton = styled.span`
+const DeleteButton = styled.button`
   color: red;
+  margin-left: 10px;
+`;
+
+const UserContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `;
 
 const baseUrl = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users";
@@ -36,34 +44,36 @@ class UserList extends React.Component {
   };
 
   deleteUser = (userId) => {
+    if (window.confirm(`Tem certeza que deseja deletar?`)) {
     axios
       .delete(`${baseUrl}/${userId}`, axiosConfig)
       .then((response) => {
-        alert("Usuário deletado com sucesso!");
-        this.getAllUsers();
+        window.alert("Usuário deletado com sucesso!");
+        this.getUsers();
       })
       .catch((error) => {
+        window.alert ("Algo deu errado...Tente novamente")
         console.log(error.message);
-        alert("Algo deu errado... Tente de novo");
       });
-  };
+  }
+}
 
   render() {
     const RenderUser = this.state.users.map((user) => {
       return (
         <p key={user.id}> 
-        {user.name} 
+        {user.name}
         <DeleteButton onClick={() => this.deleteUser(user.id)}>
             X
         </DeleteButton>
-      </p>
+        </p>
       );
     });
     return (
-      <div>
-        <h1>Lista de Usuários Cadastrados</h1>
+      <UserContainer>
+        <h3>Lista de Usuários Cadastrados</h3>
         {RenderUser}
-      </div>
+      </UserContainer>
     );
   }
 }
