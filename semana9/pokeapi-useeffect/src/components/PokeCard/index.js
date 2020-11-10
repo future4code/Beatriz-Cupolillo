@@ -1,11 +1,10 @@
 import React from "react";
 import axios from "axios";
+import { useState, useEffect } from "react";
 
-class PokeCard extends React.Component {
-  state = {
-    // valor do estado que guarda infos e foto do pokemon
-    pokemon: {}
-  };
+export default function PokeCard{
+  const
+
 
   // método que roda após a montagem do componente
   componentDidMount() {
