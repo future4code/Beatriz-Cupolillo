@@ -1,10 +1,11 @@
 import react from "react";
 import { HeaderContainer } from "./Styled"
+import Logo from "../../img/AstroMatch-logo.png"
 
 export default function Header (){
     return(
         <HeaderContainer>
-            <p>AstroMatch</p>
+            <img src={Logo} alt="Logo da AstroMatch Pink"/>
         </HeaderContainer>
     )
 

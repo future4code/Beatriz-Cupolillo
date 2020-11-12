@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const AppContainer = styled.div `
-    width: 400px;
+    width: 375px;
     height: 600px;
     position: fixed;
     top: 50%;
