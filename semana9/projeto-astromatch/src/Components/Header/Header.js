@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { HeaderContainer } from "./Styled"
 import Logo from "../../img/AstroMatch-logo.png"
 

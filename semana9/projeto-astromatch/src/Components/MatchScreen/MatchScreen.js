@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Image } from "./Styled"
 
 export default function MatchScreen() {
     const [profile, setProfile] = useState({})
     const [chooseProfile, setChooseProfile] = useState(false)
 
+    useEffect(() => {
+        getProfile();
+      }, []);
 
     const getProfile = () => {
         axios
@@ -30,7 +34,6 @@ export default function MatchScreen() {
         )
         .then((res) => {
             getProfile()
-            console.log("Deu certo a escolha")
         }).catch((err)=> {
             console.log(err)
         })
@@ -50,7 +53,7 @@ export default function MatchScreen() {
 
     return (
         <div>
-            <img src={profile.photo} />
+            <Image img src={profile.photo} />
             <p>{profile.name}</p>
             <p>{profile.age}</p>
             <p>{profile.bio}</p>

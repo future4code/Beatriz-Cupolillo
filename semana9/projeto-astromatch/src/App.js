@@ -1,17 +1,8 @@
+import React, { useState } from "react";
 import Header from "./Components/Header/Header"
 import styled from "styled-components";
-import { createGlobalStyle, withTheme } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    background-color: pink;
-    font-family: Roboto, sans-serif;
-  }
-  * {
-    box-sizing: border-box;
-  }
-`
+import MatchList from "./Components/MatchList/MatchList"
+import MatchScreen from "./Components/MatchScreen/MatchScreen"
 
 const AppContainer = styled.div `
     width: 375px;
@@ -23,16 +14,36 @@ const AppContainer = styled.div `
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
+    overflow: hidden;
 ` 
 
-const App = () => {
-	return (
-    <withTheme>
-			<GlobalStyle/>
-			<AppContainer>
-				<Header/>
-			</AppContainer>
-    </withTheme>
-	)
+export default function App() {
+  const [showScreen, setShowScreen] =  useState(false)
+
+  const openMatchScreen = () =>{
+    if (!showScreen){
+      return(
+        <MatchScreen />
+      )
+    }else {
+      return(
+        <MatchList />
+      ) 
+
+    }
+
+  }
+
+  const newScreen = () => {
+    setShowScreen(!showScreen)
+  }
+
+
+  return (
+        <AppContainer>
+          <Header />
+          <button onClick={newScreen}>ABRIR LISTA MATCH</button>
+          {openMatchScreen()}
+        </AppContainer>
+  );
 }
-export default App;

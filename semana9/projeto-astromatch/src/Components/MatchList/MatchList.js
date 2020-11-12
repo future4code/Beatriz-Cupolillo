@@ -1,6 +1,6 @@
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import { Image } from "./Styled"
 
 export default function MatchList() {
     const [match, setMatch] = useState([])
@@ -11,7 +11,7 @@ export default function MatchList() {
 
     const showMatch = () => {
         axios.get(
-            "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/beatriz-cupolillo/person"
+          "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/beatriz-cupolillo/matches"
         )
             .then((res) => {
                 setMatch(res.data.matches)
@@ -31,17 +31,15 @@ export default function MatchList() {
             })
     }
 
-    const renderMatches = match.lenght ? (
+    const renderMatches = 
         match.map((profile) => {
             return (
                 <p key={profile.id}>
-                    {" "}
-                    <img src={profile.photo} />
+                    <Image img src={profile.photo} alt={profile.name}/>
                     {profile.name}
                 </p>
             )
         })
-    ) : <p>Você não possui Matchs =( </p>
 
     return (
         <div>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div `
     width: 100%;
-    height: 100px;
+    height: 80px;
     display:flex;
     flex-direction: column;
     border-radius: 5px;
@@ -10,6 +10,6 @@ export const HeaderContainer = styled.div `
     > img {
         max-width: 50%;
         max-height: 100%;
-        margin: 10px 20px 10px 20px;
+        margin: auto;
     }
 ` 
