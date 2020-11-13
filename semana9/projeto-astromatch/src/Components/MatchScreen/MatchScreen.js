@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Image } from "./Styled"
+import { Image, CardContainer, InfoContainer, ButtonsContainer } from "./Styled"
+import DislikeImg from "../../img/dislike.png"
+import LikeImg from "../../img/like.png"
 
 export default function MatchScreen() {
     const [profile, setProfile] = useState({})
@@ -52,14 +54,18 @@ export default function MatchScreen() {
     }
 
     return (
-        <div>
+        <CardContainer>
             <Image img src={profile.photo} />
-            <p>{profile.name}</p>
-            <p>{profile.age}</p>
-            <p>{profile.bio}</p>
-            <button onClick={onClickDislike}> X </button>
-            <button onClick={onClickLike}> ♥ </button>
+            <InfoContainer>
+                <p>{profile.name}</p>
+                <p>{profile.age}</p>
+                <p>{profile.bio}</p>
+            </InfoContainer>
+            <ButtonsContainer>
+                <img src={DislikeImg} alt="botão amei" onClick={onClickDislike} />
+                <img src={LikeImg} alt="botão não gostei" onClick={onClickLike} />
+            </ButtonsContainer>
+        </CardContainer>
 
-        </div>
     )
 }

@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header"
 import styled from "styled-components";
 import MatchList from "./Components/MatchList/MatchList"
 import MatchScreen from "./Components/MatchScreen/MatchScreen"
+import ButtonMatches from "./img/matches.png"
 
 const AppContainer = styled.div `
     width: 375px;
@@ -14,8 +15,14 @@ const AppContainer = styled.div `
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
-    overflow: hidden;
 ` 
+
+const Button = styled.img `
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 300px;
+`
 
 export default function App() {
   const [showScreen, setShowScreen] =  useState(false)
@@ -42,7 +49,7 @@ export default function App() {
   return (
         <AppContainer>
           <Header />
-          <button onClick={newScreen}>ABRIR LISTA MATCH</button>
+          <Button img src ={ButtonMatches} onClick={newScreen} />
           {openMatchScreen()}
         </AppContainer>
   );

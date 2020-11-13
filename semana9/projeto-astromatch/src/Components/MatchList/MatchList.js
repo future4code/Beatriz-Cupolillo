@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Image } from "./Styled"
+import { Image, ListContainer } from "./Styled"
 
 export default function MatchList() {
     const [match, setMatch] = useState([])
@@ -34,10 +34,12 @@ export default function MatchList() {
     const renderMatches = 
         match.map((profile) => {
             return (
+                <ListContainer>
                 <p key={profile.id}>
                     <Image img src={profile.photo} alt={profile.name}/>
                     {profile.name}
                 </p>
+                </ListContainer>
             )
         })
 
