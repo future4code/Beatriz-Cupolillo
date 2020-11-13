@@ -15,13 +15,18 @@ const AppContainer = styled.div `
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
+    overflow: auto;
 ` 
 
 const Button = styled.img `
   width: 40px;
   height: 40px;
   margin-top: 20px;
-  margin-left: 300px;
+  margin-right: 20px;
+  float: right;
+    &:hover {
+    opacity: 0.5;
+        }
 `
 
 export default function App() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Image, ListContainer } from "./Styled"
+import { Image, ListContainer, ClearButton } from "./Styled"
 
 export default function MatchList() {
     const [match, setMatch] = useState([])
@@ -45,8 +45,8 @@ export default function MatchList() {
 
     return (
         <div>
+            <ClearButton onClick={onClickClearMatches}>Limpar tudo</ClearButton>
             {renderMatches}
-            <button onClick={onClickClearMatches}>Limpar tudo</button>
         </div>
     )
 }

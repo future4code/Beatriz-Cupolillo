@@ -8,9 +8,16 @@ export const Image = styled.img `
 ` 
 
 export const ListContainer = styled.div`
-    border: 1px dotted #e0e0e0;
     display: flex;
     padding: 2px;
     height: 90px;
+`
 
+export const ClearButton = styled.button`
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+    color: palevioletred;
+    border: 2px solid palevioletred;
 `
