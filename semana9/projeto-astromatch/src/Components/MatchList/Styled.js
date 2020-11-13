@@ -11,6 +11,7 @@ export const ListContainer = styled.div`
     display: flex;
     padding: 2px;
     height: 90px;
+    margin-left: 10px;
 `
 
 export const ClearButton = styled.button`
