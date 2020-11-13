@@ -44,13 +44,11 @@ export default function MatchScreen() {
     const onClickLike = () => {
         setChooseProfile(true)
         choosePerson()
-        console.log("Gostei")
     }
 
     const onClickDislike = () => {
         setChooseProfile(false)
         choosePerson()
-        console.log("Não Gostei")
     }
 
     return (
