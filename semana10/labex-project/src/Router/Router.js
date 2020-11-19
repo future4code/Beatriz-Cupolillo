@@ -5,6 +5,7 @@ import HomePage from "../Components/HomePage"
 import ListTripsPage from "../Components/ListTripsPage"
 import LoginPage from "../Components/LoginPage"
 import TripDetailsPage from "../Components/TripDetailsPage"
+import ApplicationForm from "../Components/ApplicationForm"
 
 function Router() {
     return (
@@ -28,6 +29,10 @@ function Router() {
   
         <Route exact path="/createTrip">
           <CreateTripPage/>
+        </Route>
+
+        <Route exact path="/applicationForm">
+          <ApplicationForm/>
         </Route>
   
       </Switch >

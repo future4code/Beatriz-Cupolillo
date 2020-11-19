@@ -1,7 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { NavContainer } from "./Styled"
 
-export default function ListTripsPage(){
+export default function NavBar(){
     const history = useHistory();
 
     const goToHome = () => {
@@ -12,17 +13,17 @@ export default function ListTripsPage(){
         history.push("/login")
     }
 
-    const goToApplicationForm = () => {
-        history.push("/applicationForm")
+    const goToTripsPage = () => {
+        history.push("/listTrips")
     }
 
     return (
 
-        <div>
-            <h3>LabeX - Trips </h3>
+        <NavContainer>
+            <h3>LabeX</h3>
             <button onClick={goToHome}>Home</button>
             <button onClick={goToLoginPage}>Login</button>
-            <button onClick={goToApplicationForm}>Clique aqui para se inscrever!</button>
-        </div>
+            <button onClick={goToTripsPage}>Trips</button>
+        </NavContainer>
     )
 }
