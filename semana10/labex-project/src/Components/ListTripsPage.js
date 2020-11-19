@@ -1,28 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import NavBar from "./NavBar"
+import Axios from "axios"
 
-export default function ListTripsPage(){
+const ListTripsPage = ()  => {
+    const [trips, setTrips] = useState([])
+
+    useEffect(() => {
+        getTrips()
+    }, [])
+
+    const getTrips = () => {
+        Axios
+            .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/beatriz-cupolillo/trips",
+                {
+                headers: {
+                auth: localStorage.getItem("token")
+              }
+            }
+            )
+            .then((res) => {
+                setTrips(res.data.trips)
+            })
+            .catch((err) => {
+                console.log(err.message)
+            })
+    }
+
     const history = useHistory();
-
-    const goToHome = () => {
-        history.push("/")
-    }
-
-    const goToLoginPage = () => {
-        history.push("/login")
-    }
 
     const goToApplicationForm = () => {
         history.push("/applicationForm")
     }
 
-    return (
+    const allTrips = trips.map((trip) => {
+        return (
+            <div key={trip.id}>
+                <p>Nome da Viagem: {trip.name}</p>
+                <p>Descrição: {trip.description}</p>
+                <p>Destino: {trip.planet}</p>
+                <p>Duração: {trip.durationInDays} dias</p>
+                <p>Data: {trip.date} </p>
+                <button onClick={goToApplicationForm}>Aplique para essa viagem!</button>
+            </div>
+        )
+    })
 
+    return (
         <div>
-            <h3>LabeX - Trips </h3>
-            <button onClick={goToHome}>Home</button>
-            <button onClick={goToLoginPage}>Login</button>
-            <button onClick={goToApplicationForm}>Clique aqui para se inscrever!</button>
+            <NavBar />
+            {allTrips}
         </div>
-    )
+    );
 }
+
+export default ListTripsPage;

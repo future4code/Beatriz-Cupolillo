@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import NavBar from "./NavBar"
 
 export default function LoginPage(){
     const history = useHistory();
@@ -15,9 +16,9 @@ export default function LoginPage(){
     return (
 
         <div>
+            <NavBar />
             <h3>LabeX - Login Adm</h3>
-            <button onClick={goToHome}>Home</button>
-            <button onClick={createNewTrip}>New Trip</button>
+
         </div>
     )
 }

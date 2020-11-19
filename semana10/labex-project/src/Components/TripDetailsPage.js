@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import NavBar from "./NavBar"
 
 export default function TripDetailsPage(){
     const history = useHistory();
