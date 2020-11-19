@@ -22,8 +22,8 @@ export default function NavBar(){
         <NavContainer>
             <h3>LabeX</h3>
             <button onClick={goToHome}>Home</button>
-            <button onClick={goToLoginPage}>Login</button>
             <button onClick={goToTripsPage}>Trips</button>
+            <button onClick={goToLoginPage}>Login Adm</button>
         </NavContainer>
     )
 }
