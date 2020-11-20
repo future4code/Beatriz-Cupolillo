@@ -12,13 +12,8 @@ const ListTripsPage = ()  => {
 
     const getTrips = () => {
         Axios
-            .get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/beatriz-cupolillo/trips",
-                {
-                headers: {
-                auth: localStorage.getItem("token")
-              }
-            }
-            )
+            .get
+            ("https://us-central1-labenu-apis.cloudfunctions.net/labeX/beatriz-cupolillo/trips")
             .then((res) => {
                 setTrips(res.data.trips)
             })
