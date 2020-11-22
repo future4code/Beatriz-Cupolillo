@@ -1,8 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { useProtectedPage } from "../hooks/useProtectedPage";
 import NavBar from "./NavBar"
 
 export default function TripDetailsPage(){
+    useProtectedPage()
+
     const history = useHistory();
 
     const goToHome = () => {
@@ -20,10 +23,8 @@ export default function TripDetailsPage(){
     return (
 
         <div>
-            <h3>LabeX - Trip Details</h3>
-            <button onClick={goToHome}>Home</button>
-            <button onClick={goToLoginPage}>Login</button>
-            <button onClick={goToTripsPage}>Trips</button>
+            <NavBar />
+        <p>Aqui ficam os detalhes das viagens</p>
         </div>
-    )
+  );
 }

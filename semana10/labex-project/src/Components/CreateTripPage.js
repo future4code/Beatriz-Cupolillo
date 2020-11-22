@@ -1,8 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { useProtectedPage } from "../../hooks/useProtectedPage";
 import NavBar from "./NavBar"
 
 export default function CreateTripPage(){
+    useProtectedPage()
+
     const history = useHistory();
 
     const goToLoginPage = () => {
