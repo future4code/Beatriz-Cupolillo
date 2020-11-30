@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import NavBar from '../Components/NavBar/navbar'
 import Login from '../Screens/Login/index'
 import Feed from '../Screens/Feed/index'
 import NewPost from '../Screens/NewPost/index'
+import Register from '../Screens/Register/index'
 
 function Router() {
     return (
@@ -25,8 +25,8 @@ function Router() {
           <NewPost/>
         </Route>
   
-        <Route exact path="/">
-          </>
+        <Route exact path="/register">
+          <Register/>
         </Route>
 
         <Route exact path="/">
