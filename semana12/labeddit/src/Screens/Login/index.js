@@ -1,10 +1,10 @@
 import React from 'react';
 import {useForm} from "../../Hooks/useForm"
-import { login } from '../../services/user';
+import { login } from '../../Services/user'
 import {TextField, Button} from '@material-ui/core'
 import { FormContainer, LoginPageContainer } from './styled';
 import { useHistory } from 'react-router-dom';
-import { useUnprotectPage } from '../../Hooks/useUnprotectedPage'
+import { useUnprotectPage } from '../../Hooks/useUnprotectPage'
 
 const LoginPage = () => {
     useUnprotectPage()

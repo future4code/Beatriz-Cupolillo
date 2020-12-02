@@ -1,5 +1,5 @@
 import React from 'react';
-import { useProtectPage } from '../../Hooks/useProtectedPage'
+import { useProtectPage } from '../../Hooks/useProtectPage'
 
 const AddPostPage = () => {
     useProtectPage()

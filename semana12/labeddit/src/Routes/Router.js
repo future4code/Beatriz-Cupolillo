@@ -4,14 +4,12 @@ import Login from '../Screens/Login/index'
 import Feed from '../Screens/Feed/index'
 import NewPost from '../Screens/NewPost/index'
 import Register from '../Screens/Register/index'
+import ErrorPage from '../Screens/ErrorPage/index'
 
 function Router() {
     return (
       <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <HomePage/>
-        </Route>
   
         <Route exact path="/feed">
           <Feed/>
@@ -27,6 +25,10 @@ function Router() {
   
         <Route exact path="/register">
           <Register/>
+        </Route>
+
+        <Route exact path="/errorpage">
+          <ErrorPage/>
         </Route>
 
       </Switch >
