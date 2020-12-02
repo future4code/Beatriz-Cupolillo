@@ -29,10 +29,6 @@ function Router() {
           <Register/>
         </Route>
 
-        <Route exact path="/">
-          </>
-        </Route>
-  
       </Switch >
     </BrowserRouter>
   
