@@ -6,34 +6,32 @@ import NewPost from '../Screens/NewPost/index'
 import Register from '../Screens/Register/index'
 import ErrorPage from '../Screens/ErrorPage/index'
 
-function Router() {
+const Router = ()  => {
     return (
-      <BrowserRouter>
       <Switch>
   
-        <Route exact path="/feed">
-          <Feed/>
-        </Route>
-  
-        <Route  exact path="/login">
+        <Route  exact path={"/login"}>
          <Login/>
         </Route>
   
-        <Route exact path="/newpost">
-          <NewPost/>
-        </Route>
-  
-        <Route exact path="/register">
+        <Route exact path={"/register"}>
           <Register/>
         </Route>
 
-        <Route exact path="/errorpage">
+        <Route exact path={["/feed", "/"]}>
+          <Feed/>
+        </Route>
+
+        <Route exact path={'/newpost'}>
+          <NewPost/>
+        </Route>
+
+
+        <Route exact path={"/errorpage"}>
           <ErrorPage/>
         </Route>
 
-      </Switch >
-    </BrowserRouter>
-  
+      </Switch>
   
     );
   }

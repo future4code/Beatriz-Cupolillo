@@ -4,7 +4,7 @@ import { useProtectPage } from '../../Hooks/useProtectPage'
 const FeedPage = () => {
     useProtectPage()
 
-    return <div>FeedPage</div>
+    return <div>FeedPage - As noticias aparecerao aqui</div>
 }
 
 export default FeedPage;
