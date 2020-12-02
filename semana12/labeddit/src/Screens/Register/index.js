@@ -9,7 +9,7 @@ import {useUnprotectPage} from '../../Hooks/useUnprotectPage'
 const RegisterPage = () => {
     useUnprotectPage()
     const history = useHistory()
-    const {form, onChange} = useForm({name: "", email: "", password: ""})
+    const {form, onChange} = useForm({username: "", email: "", password: ""})
 
     const handleInputChange = (event) => {
         const {value, name} = event.target
@@ -31,7 +31,7 @@ const RegisterPage = () => {
                     label="Nome"
                     variant="outlined"
                     name="name"
-                    value={form.name}
+                    value={form.username}
                     onChange={handleInputChange}
                 />
                 <TextField 
