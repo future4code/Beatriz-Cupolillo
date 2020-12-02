@@ -3,7 +3,7 @@ export const goToLogin = (history) => {
 }
   
 export const goToSignUp = (history) => {
-    history.push('/cadastro')
+    history.push('/register')
 }
 
 export const goToFeed = (history) => {

@@ -6,6 +6,7 @@ export const SignupPageContainer = styled.div`
     width: 85vw;
     max-width: 465px;
     margin: 0 auto;
+    padding: 35px;
 `
 
 export const FormContainer = styled.form`

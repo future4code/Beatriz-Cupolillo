@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import Login from '../Screens/Login/index'
 import Feed from '../Screens/Feed/index'
 import NewPost from '../Screens/NewPost/index'
-import Register from '../Screens/Register/index'
+import RegisterPage from '../Screens/Register/index'
 import ErrorPage from '../Screens/ErrorPage/index'
 
 const Router = ()  => {
@@ -15,7 +15,7 @@ const Router = ()  => {
         </Route>
   
         <Route exact path={"/register"}>
-          <Register/>
+          <RegisterPage/>
         </Route>
 
         <Route exact path={["/feed", "/"]}>
