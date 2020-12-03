@@ -19,7 +19,7 @@ const RegisterPage = () => {
 
     const handleSubmission = (event) => {
         event.preventDefault()
-        
+        console.log("hellooo")
         signup(form, history)
     }
 
