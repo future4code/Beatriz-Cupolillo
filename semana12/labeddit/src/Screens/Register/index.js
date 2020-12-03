@@ -9,7 +9,7 @@ import {useUnprotectPage} from '../../Hooks/useUnprotectPage'
 const RegisterPage = () => {
     useUnprotectPage()
     const history = useHistory()
-    const {form, onChange, reset} = useForm({username: "", email: "", password: ""})
+    const {form, onChange} = useForm({username: "", email: "", password: ""})
 
     const handleInputChange = (event) => {
         const {value, name} = event.target
@@ -19,7 +19,6 @@ const RegisterPage = () => {
     const handleSubmission = (event) => {
         event.preventDefault()
         signup(form, history)
-        reset()
     }
 
     return (
