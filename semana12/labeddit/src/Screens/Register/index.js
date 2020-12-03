@@ -9,18 +9,17 @@ import {useUnprotectPage} from '../../Hooks/useUnprotectPage'
 const RegisterPage = () => {
     useUnprotectPage()
     const history = useHistory()
-    const {form, onChange} = useForm({username: "", email: "", password: ""})
+    const {form, onChange, reset} = useForm({username: "", email: "", password: ""})
 
     const handleInputChange = (event) => {
         const {value, name} = event.target
-
         onChange(value, name)
     }
 
     const handleSubmission = (event) => {
         event.preventDefault()
-        console.log("hellooo")
         signup(form, history)
+        reset()
     }
 
     return (
@@ -28,9 +27,9 @@ const RegisterPage = () => {
             {/* <img src={logo} /> */}
             <FormContainer onSubmit={handleSubmission} >
                 <TextField 
-                    label="Nome"
+                    label="UserName"
                     variant="outlined"
-                    name="name"
+                    name="username"
                     value={form.username}
                     onChange={handleInputChange}
                 />

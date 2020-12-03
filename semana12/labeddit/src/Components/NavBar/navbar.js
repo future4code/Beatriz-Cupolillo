@@ -8,12 +8,19 @@ import { goToFeed, goToLogin } from '../../Routes/Coordinator'
 
 const NavBar = () => {
     const history = useHistory()
+
+    const logout = () => {
+      localStorage.removeItem("token");
+      goToLogin(history)
+    }
+
+
     return (
         <AppBar className={'appbar'}>
           <Toolbar>
             <ButtonsContainer>
               <Button color="inherit" onClick={() => goToFeed(history)}>Labeddit</Button>
-              <Button color="inherit" onClick={() => goToLogin(history)}>Logout</Button>
+              <Button color="inherit" onClick={logout}>Logout</Button>
             </ButtonsContainer>
           </Toolbar>
         </AppBar>
