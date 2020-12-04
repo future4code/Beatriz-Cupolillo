@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const PostContainer = styled.div`
-  border: 2px solid;
-  width: 40vw;
-  min-width: 300px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  padding: 10px;
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
   `
