@@ -6,6 +6,7 @@ import { BASE_URL } from '../../Constants/apiContant'
 import { PostContainer } from "./styled"
 import { Typography } from '@material-ui/core';
 import { useRequestData } from "../../Hooks/useRequestData";
+import PostCard from "../../Components/PostCard/PostCard";
 
 function PostDetails () {
     useProtectPage()
@@ -16,7 +17,7 @@ function PostDetails () {
 
       return (
         <PostContainer>
-            {detailPost && <div>
+            {detailPost && <PostCard>
                 <Typography variant="h5" color="primary" align="center">
                     {detailPost.post.username}
                 </Typography>
@@ -29,7 +30,7 @@ function PostDetails () {
                 <Typography align="center">
                     {detailPost.post.votesCount}
                 </Typography>
-            </div>}
+            </PostCard>}
         </PostContainer>
       )
 }

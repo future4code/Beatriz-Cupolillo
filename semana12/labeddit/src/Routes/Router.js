@@ -27,7 +27,7 @@ const Router = ()  => {
           <NewPost/>
         </Route>
 
-        <Route exact path = {'/details/:id'}>
+        <Route exact path = {'/posts/:id'}>
           <PostDetails />
         </Route>
 

@@ -18,9 +18,9 @@ const PostCard = (props) => {
             <p> {props.text} </p>
             </CardMediaStyled>
           <CardContent>
-            <Typography gutterBottom align="center" color="primary">
+            {/* <Typography gutterBottom align="center" color="primary">
               {props.titulo}
-            </Typography>
+            </Typography> */}
           </CardContent>
         </CardActionArea>
       </CardStyled>

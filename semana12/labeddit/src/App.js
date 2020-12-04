@@ -8,6 +8,8 @@ import NavBar from './Components/NavBar/navbar'
 
 const Container = styled.div`
   padding-top: 64px;
+  width: 100vw;
+  min-height: 100vh;
   background-color: #DAE0E6;
 `
 
