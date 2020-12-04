@@ -12,25 +12,24 @@ function PostDetails () {
     useProtectPage()
     const history = useHistory()
     const params = useParams()
-    const data = useRequestData(`${BASE_URL}/posts/${params.id}` ,[])
-    const detailPost = data[0]
+    const data = useRequestData(`${BASE_URL}/posts/${params.id}`)
 
       return (
         <PostContainer>
-            {detailPost && <PostCard>
+            {data && <div>
                 <Typography variant="h5" color="primary" align="center">
-                    {detailPost.post.username}
+                    {data.username}
                 </Typography>
                 <Typography variant="h5" color="primary" align="center">
-                    {detailPost.post.title}
+                    {data.title}
                 </Typography>
                 <Typography align="center">
-                    {detailPost.post.text}
+                    {data.text}
                 </Typography>
                 <Typography align="center">
-                    {detailPost.post.votesCount}
+                    {data.votesCount}
                 </Typography>
-            </PostCard>}
+            </div>}
         </PostContainer>
       )
 }

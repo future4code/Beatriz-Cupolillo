@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom"
 import Login from '../Screens/Login/index'
 import Feed from '../Screens/Feed/index'
-import NewPost from '../Screens/NewPost/index'
 import RegisterPage from '../Screens/Register/index'
 import ErrorPage from '../Screens/ErrorPage/index'
 import PostDetails from '../Screens/PostDetails/index'
@@ -21,10 +20,6 @@ const Router = ()  => {
 
         <Route exact path={["/feed", "/"]}>
           <Feed/>
-        </Route>
-
-        <Route exact path={'/newpost'}>
-          <NewPost/>
         </Route>
 
         <Route exact path = {'/posts/:id'}>

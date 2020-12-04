@@ -5,7 +5,7 @@ export const LoginPageContainer = styled.div`
     flex-direction: column;
     width: 85vw;
     max-width: 465px;
-    margin: auto;
+    margin: 0 auto;
     padding: 40px;
 `
 
@@ -14,5 +14,5 @@ export const FormContainer = styled.form`
     flex-direction: column;
     height: 24vh;
     justify-content: space-around;
-    margin-bottom: 15px;
-`
+    margin-bottom: 25px;
+    `

@@ -24,7 +24,7 @@ export const createComments = (body, postId) => {
   const token = localStorage.getItem("token");
 
   axios
-    .post(`${baseUrl}/posts/${postId}/comment`, body, {
+    .post(`${BASE_URL}/posts/${postId}/comment`, body, {
       headers: {
         Authorization: token,
       },
@@ -40,7 +40,7 @@ export const createComments = (body, postId) => {
 export const votePost = (body, postId) => {
   const token = localStorage.getItem("token");
   axios
-    .put(`${baseUrl}/posts/${postId}/vote`, body, {
+    .put(`${BASE_URL}/posts/${postId}/vote`, body, {
       headers: {
         Authorization: token,
       },

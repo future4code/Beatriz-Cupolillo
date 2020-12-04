@@ -33,6 +33,7 @@ const LoginPage = () => {
                     name="email"
                     value={form.email}
                     onChange={handleInputChange}
+                    background-color="primary"
                 />
                 <TextField
                     label="Senha"
