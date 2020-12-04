@@ -4,19 +4,19 @@ import { useRequestData } from '../../Hooks/useRequestData'
 import { useHistory } from 'react-router-dom';
 import { BASE_URL } from '../../Constants/apiContant'
 import { FeedPageContainer } from './styled'
-import { PostCard } from '../../Constants/PostCard'
+import PostCard from '../../Components/PostCard/PostCard'
 
 
 
 const FeedPage = () => {
     useProtectPage()
     const history = useHistory()
-    const posts = useRequestData(`${BASE_URL}/posts`, [])
+    const allPosts = useRequestData(`${BASE_URL}/posts`, [])
 
 
     return (
         <FeedPageContainer>
-            {posts.map(post => {
+            {allPosts && allPosts.posts && allPosts.posts.map((post) => {
                 return <PostCard 
                 key={post.id}
                 title={post.title}
