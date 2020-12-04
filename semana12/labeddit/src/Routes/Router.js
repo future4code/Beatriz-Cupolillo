@@ -5,6 +5,7 @@ import Feed from '../Screens/Feed/index'
 import NewPost from '../Screens/NewPost/index'
 import RegisterPage from '../Screens/Register/index'
 import ErrorPage from '../Screens/ErrorPage/index'
+import PostDetails from '../Screens/PostDetails/index'
 
 const Router = ()  => {
     return (
@@ -26,8 +27,11 @@ const Router = ()  => {
           <NewPost/>
         </Route>
 
+        <Route exact path = {'/post/:id'}>
+          <PostDetails />
+        </Route>
 
-        <Route exact path={"/errorpage"}>
+        <Route>
           <ErrorPage/>
         </Route>
 
