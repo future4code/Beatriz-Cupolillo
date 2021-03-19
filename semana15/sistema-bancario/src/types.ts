@@ -4,7 +4,7 @@ export type Transaction = {
     description: string
 }
 
-export type account = {
+export type Account = {
     name: string,
     cpf: string,
     birthDate: Date,
