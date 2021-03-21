@@ -6,7 +6,7 @@ export type Transaction = {
 
 export type Account = {
     name: string,
-    cpf: string,
+    CPF: string,
     birthDate: Date,
     balance: number,
     statement: Array<Transaction>
